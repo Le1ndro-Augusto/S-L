@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S&L | Loja Romântica</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', cursive;
+      background-color: #FFFFFF;
+      color: #1A1A1A;
+    }
+    .brand {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 2rem;
+      color: #FADADD;
+    }
+    .nav-link {
+      color: #1A1A1A !important;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('assets/hero-image.jpg') center/cover no-repeat;
+      height: 80vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .btn-pink {
+      background-color: #FADADD;
+      color: #1A1A1A;
+      border: none;
+    }
+    .category-icon {
+      font-size: 2rem;
+      color: #FADADD;
+    }
+    .card-title {
+      font-weight: bold;
+    }
+    footer {
+      background-color: #1A1A1A;
+      color: white;
+      padding: 2rem 0;
+    }
+    .testimonial {
+      background-color: #FADADD;
+      padding: 1rem;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand brand" href="#">S&L</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Romance</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Romanel</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">O Boticário</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Perfumes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Cremes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Roupas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Promoções</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+        </ul>
+      </div>
+      <div class="d-flex">
+        <a class="nav-link" href="#">❤️</a>
+        <a class="nav-link" href="#">🛒</a>
+        <a class="nav-link" href="#">👤</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <h1>Sinta a beleza, viva o romance.</h1>
+      <a href="#colecao" class="btn btn-pink mt-4">Ver Coleção</a>
+    </div>
+  </section>
+
+  <!-- Categorias em Destaque -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">Categorias</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-3"><div class="category-icon">💖</div><p>Romance</p></div>
+        <div class="col-6 col-md-3"><div class="category-icon">💍</div><p>Romanel</p></div>
+        <div class="col-6 col-md-3"><div class="category-icon">🌸</div><p>O Boticário</p></div>
+        <div class="col-6 col-md-3"><div class="category-icon">💐</div><p>Perfumes</p></div>
+        <div class="col-6 col-md-3"><div class="category-icon">🧴</div><p>Cremes</p></div>
+        <div class="col-6 col-md-3"><div class="category-icon">👗</div><p>Roupas</p></div>
+        <div class="col-6 col-md-3"><div class="category-icon">🎁</div><p>Promoções</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produtos -->
+  <section class="container py-5" id="colecao">
+    <h2 class="text-center mb-4">Produtos em Destaque</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="https://i.imgur.com/xG74tOh.jpg" class="card-img-top" alt="Perfume Amor Infinito">
+          <div class="card-body">
+            <h5 class="card-title">Perfume “Amor Infinito”</h5>
+            <p class="card-text">R$ 149,90</p>
+            <a href="#" class="btn btn-outline-dark btn-sm">Ver mais</a>
+            <button class="btn btn-pink btn-sm float-end">Adicionar</button>
+          </div>
+        </div>
+      </div>
+      <!-- Adicione outros cards aqui com outros produtos -->
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Depoimentos</h2>
+      <div class="row">
+        <div class="col-md-4 testimonial">
+          <p>“Simplesmente amei o perfume! Chegou rápido e super bem embalado.” – Juliana M.</p>
+        </div>
+        <div class="col-md-4 testimonial">
+          <p>“Comprei um presente para minha esposa e ela adorou. Excelente loja!” – Carlos S.</p>
+        </div>
+        <div class="col-md-4 testimonial">
+          <p>“Produtos maravilhosos, cheirinhos perfeitos. Já sou cliente fiel.” – Renata L.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>Contato: contato@sl.com | WhatsApp: (92) 99999-9999</p>
+      <p>Endereço: Rua do Amor, 123 - Manaus/AM</p>
+      <p>
+        <a href="#" class="text-white me-3">Instagram</a>
+        <a href="#" class="text-white me-3">Facebook</a>
+        <a href="#" class="text-white">TikTok</a>
+      </p>
+      <form class="mt-3">
+        <input type="email" placeholder="Seu e-mail" class="form-control d-inline w-50">
+        <button class="btn btn-pink mt-2">Receber Ofertas</button>
+      </form>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
